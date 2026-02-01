@@ -1,0 +1,96 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "AICodeReview",
+    "friendlyName": "AI Code Review",
+    "description": "AI-powered code review for Pull Requests using OpenAI GPT models",
+    "helpMarkDown": "[Learn more about this task](https://github.com/your-username/ai-code-review-extension)",
+    "category": "Utility",
+    "author": "Your Name",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "instanceNameFormat": "AI Code Review",
+    "groups": [
+        {
+            "name": "advanced",
+            "displayName": "Advanced Options",
+            "isExpanded": false
+        }
+    ],
+    "inputs": [
+        {
+            "name": "openaiApiKey",
+            "type": "string",
+            "label": "OpenAI API Key",
+            "defaultValue": "$(OPENAI_API_KEY)",
+            "required": true,
+            "helpMarkDown": "Your OpenAI API key. Recommended to use a secret variable like $(OPENAI_API_KEY)"
+        },
+        {
+            "name": "openaiModel",
+            "type": "pickList",
+            "label": "OpenAI Model",
+            "defaultValue": "gpt-5.2-codex",
+            "required": false,
+            "helpMarkDown": "The OpenAI model to use for code review",
+            "options": {
+                "gpt-5.2-codex": "GPT-5.2 Codex (Recommended)",
+                "gpt-4o": "GPT-4o",
+                "gpt-4o-mini": "GPT-4o Mini",
+                "gpt-4-turbo": "GPT-4 Turbo"
+            }
+        },
+        {
+            "name": "maxFiles",
+            "type": "string",
+            "label": "Max Files to Review",
+            "defaultValue": "50",
+            "required": false,
+            "groupName": "advanced",
+            "helpMarkDown": "Maximum number of files to review in a single PR"
+        },
+        {
+            "name": "maxLinesPerFile",
+            "type": "string",
+            "label": "Max Lines Per File",
+            "defaultValue": "1000",
+            "required": false,
+            "groupName": "advanced",
+            "helpMarkDown": "Files larger than this will be truncated"
+        },
+        {
+            "name": "debug",
+            "type": "boolean",
+            "label": "Enable Debug Output",
+            "defaultValue": "false",
+            "required": false,
+            "groupName": "advanced",
+            "helpMarkDown": "Enable verbose debug logging"
+        },
+        {
+            "name": "continueOnError",
+            "type": "boolean",
+            "label": "Continue on Error",
+            "defaultValue": "true",
+            "required": false,
+            "groupName": "advanced",
+            "helpMarkDown": "Continue pipeline execution if the review fails"
+        }
+    ],
+    "execution": {
+        "Node16": {
+            "target": "index.js"
+        }
+    },
+    "messages": {
+        "TaskStarted": "Starting AI Code Review...",
+        "TaskCompleted": "AI Code Review completed successfully",
+        "TaskFailed": "AI Code Review failed: %s",
+        "NotPullRequest": "This task only runs on Pull Request builds. Skipping.",
+        "MissingApiKey": "OpenAI API Key is required",
+        "ReviewPosted": "Review comments posted to PR"
+    }
+}

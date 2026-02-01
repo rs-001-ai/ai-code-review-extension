@@ -1,0 +1,24 @@
+{
+    "name": "ai-code-review-extension",
+    "version": "1.0.0",
+    "description": "AI Code Review Extension for Azure DevOps",
+    "scripts": {
+        "build:task": "cd tasks/AICodeReviewTask && npm install && npm run build",
+        "build": "npm run build:task",
+        "package": "tfx extension create --manifest-globs vss-extension.json",
+        "publish": "tfx extension publish --manifest-globs vss-extension.json",
+        "publish:dev": "tfx extension publish --manifest-globs vss-extension.json --share-with your-org"
+    },
+    "keywords": [
+        "azure-devops",
+        "extension",
+        "code-review",
+        "ai",
+        "openai"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+        "tfx-cli": "^0.16.0"
+    }
+}

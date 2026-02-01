@@ -1,0 +1,30 @@
+# Node
+node_modules/
+*.log
+npm-debug.log*
+
+# TypeScript
+*.js
+*.js.map
+*.d.ts
+!tasks/AICodeReviewTask/ai-code-review.py
+
+# Extension packages
+*.vsix
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local testing
+.local/
+test-output/
+
+# Placeholder files
+*.placeholder

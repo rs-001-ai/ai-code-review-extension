@@ -1,0 +1,85 @@
+{
+    "$schema": "http://json.schemastore.org/vss-extension",
+    "manifestVersion": 1,
+    "id": "ai-code-review",
+    "name": "AI Code Review",
+    "version": "1.0.0",
+    "publisher": "your-publisher-id",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "AI-powered code review for Pull Requests using OpenAI GPT models. Automatically analyzes code changes and posts review comments with security, performance, and best practice suggestions.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "tags": [
+        "AI",
+        "Code Review",
+        "OpenAI",
+        "GPT",
+        "Pull Request",
+        "Security",
+        "Best Practices",
+        "Automation",
+        "DevOps",
+        "Code Quality"
+    ],
+    "icons": {
+        "default": "images/icon.png"
+    },
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/your-username/ai-code-review-extension"
+        },
+        "support": {
+            "uri": "https://github.com/your-username/ai-code-review-extension/issues"
+        },
+        "repository": {
+            "uri": "https://github.com/your-username/ai-code-review-extension"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/your-username/ai-code-review-extension"
+    },
+    "branding": {
+        "color": "rgb(0, 120, 212)",
+        "theme": "dark"
+    },
+    "screenshots": [
+        {
+            "path": "images/screenshot-pr-comment.png"
+        }
+    ],
+    "files": [
+        {
+            "path": "tasks/AICodeReviewTask"
+        },
+        {
+            "path": "images",
+            "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "ai-code-review-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "tasks/AICodeReviewTask"
+            }
+        }
+    ]
+}
