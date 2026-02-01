@@ -3,7 +3,7 @@
     "manifestVersion": 1,
     "id": "code-review-bot",
     "name": "Code Review Bot",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "public": true,
     "publisher": "RachitSinghal",
     "targets": [

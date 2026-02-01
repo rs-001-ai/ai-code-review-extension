@@ -67,9 +67,8 @@ def load_config() -> Config:
         print(f"Error: Missing required environment variables: {', '.join(missing)}")
         sys.exit(1)
 
-    # Determine skill path
-    default_skill_path = Path.home() / '.kimi' / 'skills' / 'code-review'
-    skill_path = Path(os.environ.get('SKILL_PATH', str(default_skill_path)))
+    # Determine skill path (SKILL_PATH is set by the Azure DevOps task)
+    skill_path = Path(os.environ.get('SKILL_PATH', './code-review-skill'))
 
     return Config(
         org_url=os.environ['ORG_URL'].rstrip('/'),

@@ -7,7 +7,7 @@
         "build": "npm run build:task",
         "package": "tfx extension create --manifest-globs vss-extension.json",
         "publish": "tfx extension publish --manifest-globs vss-extension.json",
-        "publish:dev": "tfx extension publish --manifest-globs vss-extension.json --share-with your-org"
+        "publish": "tfx extension publish --manifest-globs vss-extension.json"
     },
     "keywords": [
         "azure-devops",
@@ -16,7 +16,7 @@
         "ai",
         "openai"
     ],
-    "author": "Your Name",
+    "author": "Rachit Singhal",
     "license": "MIT",
     "devDependencies": {
         "tfx-cli": "^0.16.0"
