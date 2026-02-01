@@ -1,12 +1,12 @@
 {
     "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
-    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "id": "b8f3a2d1-4c5e-6f7a-8b9c-0d1e2f3a4b5c",
     "name": "AICodeReview",
     "friendlyName": "AI Code Review",
     "description": "AI-powered code review for Pull Requests using OpenAI GPT models",
-    "helpMarkDown": "[Learn more about this task](https://github.com/your-username/ai-code-review-extension)",
+    "helpMarkDown": "[Learn more about this task](https://github.com/rs-001-ai/ai-code-review-extension)",
     "category": "Utility",
-    "author": "Your Name",
+    "author": "Rachit Singhal",
     "version": {
         "Major": 1,
         "Minor": 0,

@@ -16,7 +16,7 @@ npm install -g tfx-cli
 
 1. **Update publisher ID** in `vss-extension.json`:
    ```json
-   "publisher": "your-publisher-id"
+   "publisher": "RachitSinghal"
    ```
 
 2. **Generate a unique task ID** - Replace the placeholder GUID in `tasks/AICodeReviewTask/task.json`:
@@ -53,7 +53,7 @@ npm run build
 npm run package
 ```
 
-This creates `your-publisher-id.ai-code-review-1.0.0.vsix`
+This creates `RachitSinghal.ai-code-review-1.0.0.vsix`
 
 ## Publish
 
@@ -79,7 +79,7 @@ npm run publish
 ```
 
 Or upload manually:
-1. Go to https://marketplace.visualstudio.com/manage/publishers/your-publisher-id
+1. Go to https://marketplace.visualstudio.com/manage/publishers/RachitSinghal
 2. Click "New Extension" → "Azure DevOps"
 3. Upload the `.vsix` file
 

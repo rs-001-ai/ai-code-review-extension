@@ -4,7 +4,7 @@
     "id": "ai-code-review",
     "name": "AI Code Review",
     "version": "1.0.0",
-    "publisher": "your-publisher-id",
+    "publisher": "RachitSinghal",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
@@ -39,18 +39,18 @@
     },
     "links": {
         "getstarted": {
-            "uri": "https://github.com/your-username/ai-code-review-extension"
+            "uri": "https://github.com/rs-001-ai/ai-code-review-extension"
         },
         "support": {
-            "uri": "https://github.com/your-username/ai-code-review-extension/issues"
+            "uri": "https://github.com/rs-001-ai/ai-code-review-extension/issues"
         },
         "repository": {
-            "uri": "https://github.com/your-username/ai-code-review-extension"
+            "uri": "https://github.com/rs-001-ai/ai-code-review-extension"
         }
     },
     "repository": {
         "type": "git",
-        "uri": "https://github.com/your-username/ai-code-review-extension"
+        "uri": "https://github.com/rs-001-ai/ai-code-review-extension"
     },
     "branding": {
         "color": "rgb(0, 120, 212)",

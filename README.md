@@ -145,8 +145,8 @@ The task posts a comprehensive review comment on your PR:
 
 ## Support
 
-- [GitHub Issues](https://github.com/your-username/ai-code-review-extension/issues)
-- [Documentation](https://github.com/your-username/ai-code-review-extension)
+- [GitHub Issues](https://github.com/rs-001-ai/ai-code-review-extension/issues)
+- [Documentation](https://github.com/rs-001-ai/ai-code-review-extension)
 
 ## License
 
