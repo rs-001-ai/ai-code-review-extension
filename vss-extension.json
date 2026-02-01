@@ -1,9 +1,10 @@
 {
     "$schema": "http://json.schemastore.org/vss-extension",
     "manifestVersion": 1,
-    "id": "ai-code-review",
-    "name": "AI Code Review",
-    "version": "1.0.0",
+    "id": "code-review-bot",
+    "name": "Code Review Bot",
+    "version": "1.0.2",
+    "public": true,
     "publisher": "RachitSinghal",
     "targets": [
         {
@@ -56,11 +57,6 @@
         "color": "rgb(0, 120, 212)",
         "theme": "dark"
     },
-    "screenshots": [
-        {
-            "path": "images/screenshot-pr-comment.png"
-        }
-    ],
     "files": [
         {
             "path": "tasks/AICodeReviewTask"

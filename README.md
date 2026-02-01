@@ -1,8 +1,6 @@
-# AI Code Review for Azure DevOps
+# Code Review Bot for Azure DevOps
 
 Automatically review Pull Requests using OpenAI's GPT models. Get instant feedback on security vulnerabilities, performance issues, and best practices.
-
-![AI Code Review](images/screenshot-pr-comment.png)
 
 ## Features
 
@@ -18,7 +16,7 @@ Automatically review Pull Requests using OpenAI's GPT models. Get instant feedba
 
 ### 1. Install the Extension
 
-Install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=your-publisher-id.ai-code-review).
+Install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=RachitSinghal.code-review-bot).
 
 ### 2. Add to Your Pipeline
 
